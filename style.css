@@ -2,11 +2,8 @@
     font-family: "BDO Grotesk";
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
+    overflow-x: hidden;
     background-image: linear-gradient(to bottom right, #4169e1, #234199);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +33,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     *{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     
     .hero-img-1,
