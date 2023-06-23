@@ -35,15 +35,10 @@ h1 {
     .hero-img-1,
     .hero-img-2,
     .hero-img-3 {
-        overflow-x: hidden;
-    }
-    
-    .hero-img-1,
-    .hero-img-2 {
         display: none;
     }
 
-    .hero-img-3 {
-        opacity: 0.5;
+    h1{
+        font-size: 32pt;
     }
 }
