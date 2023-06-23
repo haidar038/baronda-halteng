@@ -32,7 +32,9 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    *{
+    .hero-img-1,
+    .hero-img-2,
+    .hero-img-3 {
         overflow-x: hidden;
     }
     
