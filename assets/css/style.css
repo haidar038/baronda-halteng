@@ -1,0 +1,90 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #4169e1, #234199);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-title {
+    /* font-family: "Abuget"; */
+    text-align: right;
+}
+
+.nav-link,
+.home-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "MADE INFINITY PERSONAL USE", sans-serif;
+}
+
+.highlight {
+    background-color: yellow;
+    color: #222;
+}
+
+.fest-img {
+    height: 8rem;
+    width: auto;
+}
+
+.fest {
+    flex-wrap: nowrap;
+}
+
+.sponsor{
+    height: 60px;
+}
+
+.expo-img,
+.cave-img,
+.dive-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.expo-img img,
+.cave-img img,
+.dive-img img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.duta-img img {
+    aspect-ratio: 16/9;
+    object-position: 0 20%;
+    object-fit: cover;
+}
+
+.coka-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.coka-img img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .home-title {
+        display: none;
+    }
+
+    .expo-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sponsor{
+        height: 40px;
+    }
+}
