@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/tentang", "destination": "/tentang.html" },
+    { "source": "/kontak", "destination": "/kontak.html" },
+    { "source": "/fest", "destination": "/fest.html" },
+    { "source": "/suba", "destination": "/suba.html" },
+    { "source": "/akses", "destination": "/akses.html" }
+  ]
+}
