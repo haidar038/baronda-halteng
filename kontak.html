@@ -23,6 +23,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/feather-icons"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
     </head>
 
     <body class="h-100 d-flex flex-column min-vh-100">
@@ -63,19 +69,19 @@
                     <div class="col-12 pt-5 d-flex flex-column mb-3">
                         <h1 class="text-light mb-5 text-center">Ingin Menghubungi Kami?</h1>
                         <div class="mb-3 text-light">
-                            <p class="mb-3">
+                            <p class="mb-3 text-1">
                                 Kami sangat senang mendengar dari Anda! Jika Anda memiliki pertanyaan, saran, atau ingin mendapatkan informasi lebih lanjut tentang Festival Fagogoru dan destinasi wisata di Halmahera Tengah, jangan ragu
                                 untuk menghubungi tim kami.
                             </p>
-                            <p class="mb-3">
+                            <p class="mb-3 text-2">
                                 Kami siap membantu Anda dengan segala yang Anda butuhkan. Silakan mengisi formulir kontak di bawah ini atau menggunakan rincian kontak yang tersedia untuk menghubungi kami secara langsung. Kami akan merespons
                                 secepat mungkin.
                             </p>
-                            <p class="mb-3">
+                            <p class="mb-3 text-3">
                                 Jangan lewatkan kesempatan untuk terlibat dalam perjalanan wisata yang tak terlupakan di Halmahera Tengah. Kami berharap dapat menjawab pertanyaan Anda dan menyambut Anda dengan hangat di destinasi wisata
                                 kami yang memukau.
                             </p>
-                            <p>Tunggu apa lagi? Segera hubungi kami dan jadilah bagian dari Festival Fagogoru dan keindahan Halmahera Tengah!</p>
+                            <p class="text-4">Tunggu apa lagi? Segera hubungi kami dan jadilah bagian dari Festival Fagogoru dan keindahan Halmahera Tengah!</p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-6 mb-3">
@@ -91,7 +97,7 @@
                                         <label for="email" class="form-label">Alamat Email</label>
                                     </div>
                                     <div class="mb-3 form-floating">
-                                        <textarea class="form-control" name="message placeholder="Tulis pesan disini..." id="message"></textarea>
+                                        <textarea class="form-control" name="message" placeholder="Tulis pesan disini..." id="message"></textarea>
                                         <label for="message" class="form-label">Pesan</label>
                                     </div>
                                     <button class="btn btn-primary">Kirim <i data-feather="send"></i></button>
@@ -99,12 +105,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 d-flex flex-column gap-3">
-                        <span class="text-light"><i data-feather="mail"></i> disbudparhalteng@gmail.com</span>
-                        <span class="text-light"><i data-feather="facebook"></i> Budpar Halteng</span>
-                        <span class="text-light"><i data-feather="phone"></i> 081260016335 (Elsi)</span>
-                        <span class="text-light"><i data-feather="phone"></i> 085242594118 (Agung)</span>
-                        <span class="text-light"><i data-feather="phone"></i> 081260016335 (Ricky)</span>
+                    <div class="col-sm-12 col-lg-6 d-flex flex-column gap-3 text-lg-end">
+                        <span class="text-light socials-1">disbudparhalteng@gmail.com <i data-feather="mail"></i></span>
+                        <span class="text-light socials-2">Budpar Halteng <i data-feather="facebook"></i></span>
+                        <span class="text-light socials-3">081260016335 (Elsi) <i data-feather="phone"></i></span>
+                        <span class="text-light socials-4">085242594118 (Agung) <i data-feather="phone"></i></span>
+                        <span class="text-light socials-5">081260016335 (Ricky) <i data-feather="phone"></i></span>
                     </div>
                 </div>
             </div>
@@ -114,6 +120,20 @@
 
         <script>
             feather.replace();
+        </script>
+
+        <script>
+            gsap.from("h1", { duration: 2, opacity: 0, ease: "power4.out", y: -50 });
+            gsap.from(".text-1", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 0.3 });
+            gsap.from(".text-2", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 0.6 });
+            gsap.from(".text-3", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 0.9 });
+            gsap.from(".text-4", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 1.2 });
+            gsap.from(".card", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 1.5 });
+            gsap.from(".socials-1", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 1.8 });
+            gsap.from(".socials-2", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 2.1 });
+            gsap.from(".socials-3", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 2.4 });
+            gsap.from(".socials-4", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 2.7 });
+            gsap.from(".socials-5", { duration: 2, opacity: 0, ease: "power4.out", y: -50, delay: 3.0 });
         </script>
     </body>
 </html>
