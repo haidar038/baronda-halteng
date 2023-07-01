@@ -39,18 +39,18 @@ h6 {
     flex-wrap: nowrap;
 }
 
-.sponsor{
+.sponsor {
     height: 60px;
 }
 
-.homepage{
+.homepage {
     /* background-image: url(../img/bg-image.webp); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.cokaiba1{
+.cokaiba1 {
     height: 200px;
     position: absolute;
     bottom: 10%;
@@ -58,7 +58,7 @@ h6 {
     transform: rotate(-15deg);
 }
 
-.cokaiba2{
+.cokaiba2 {
     height: 600px;
     position: absolute;
     bottom: 10%;
@@ -68,7 +68,7 @@ h6 {
     opacity: 0.15;
 }
 
-.cokaiba3{
+.cokaiba3 {
     height: 500px;
     position: absolute;
     bottom: 10%;
@@ -122,11 +122,11 @@ h6 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .sponsor{
+    .sponsor {
         height: 40px;
     }
 
-    .cokaiba2{
+    .cokaiba2 {
         filter: blur(4px);
         position: fixed;
     }
