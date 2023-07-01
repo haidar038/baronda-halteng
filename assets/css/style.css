@@ -68,6 +68,17 @@ h6 {
     opacity: 0.15;
 }
 
+.cokaiba3{
+    height: 500px;
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    transform: rotate(-15deg);
+    z-index: -99;
+    opacity: 0.15;
+    filter: blur(4px);
+}
+
 .expo-img,
 .cave-img,
 .dive-img {
@@ -101,7 +112,9 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
-    .home-title {
+    .home-title,
+    .cokaiba1,
+    .cokaiba3 {
         display: none;
     }
 
@@ -113,7 +126,8 @@ h6 {
         height: 40px;
     }
 
-    .cokaiba1{
-        display: none;
+    .cokaiba2{
+        filter: blur(4px);
+        position: fixed;
     }
 }
