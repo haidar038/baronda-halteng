@@ -118,7 +118,8 @@ h6 {
         display: none;
     }
 
-    .expo-img {
+    .expo-img,
+    .cave-img {
         grid-template-columns: repeat(2, 1fr);
     }
 
