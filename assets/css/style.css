@@ -43,6 +43,31 @@ h6 {
     height: 60px;
 }
 
+.homepage{
+    /* background-image: url(../img/bg-image.webp); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.cokaiba1{
+    height: 200px;
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    transform: rotate(-15deg);
+}
+
+.cokaiba2{
+    height: 600px;
+    position: absolute;
+    bottom: 10%;
+    right: 4%;
+    transform: rotate(25deg);
+    z-index: -99;
+    opacity: 0.15;
+}
+
 .expo-img,
 .cave-img,
 .dive-img {
@@ -86,5 +111,9 @@ h6 {
 
     .sponsor{
         height: 40px;
+    }
+
+    .cokaiba1{
+        display: none;
     }
 }
